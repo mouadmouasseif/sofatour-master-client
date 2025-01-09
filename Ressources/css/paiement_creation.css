@@ -1,0 +1,125 @@
+
+.PaiementCreationTable {
+	width: 100%;
+	background-color: #ffffff;
+	border: none;
+	border-collapse: collapse;
+	font-family: "Roboto", sans-serif;
+	border-left: 1px solid #c1c3d1;
+}
+
+.PaiementCreationTable .PaiementCreationTable-thead th {
+	font-size: 1rem;
+    padding: 0.5em 0 0.5em 0.5em;
+    background-color: #1c1f42;
+    border: none;
+    border-right: 1px solid #f1f1f1;
+    border-bottom: 3px solid #bdbdbd;
+    color: #ffffff;
+    font-weight: 400;
+    text-align: left;
+}
+
+.PaiementCreationTable .PaiementCreationTable-thead th:last-of-type {
+	border-right: none;
+}
+
+.PaiementCreationTable .PaiementCreationTable-tbody tr:nth-of-type(even) {
+	background-color: #f1f1f1;
+}
+
+.PaiementCreationTable .PaiementCreationTable-tbody td {
+	padding: 1em;
+	border-top: none;
+	border-right: 1px solid #c1c3d1;
+	border-bottom: 1px solid #c1c3d1;
+	border-left: none;
+	text-align: center; /* Horizontally center */
+	vertical-align: middle; /* Vertically center */
+}
+
+.PaiementCreationTable-edit,
+.PaiementCreationTable-trash,
+.PaiementCreationTable-new-row {
+	text-transform: uppercase;
+	transition: 0.5s ease;
+}
+
+.PaiementCreationTable-edit:hover,
+.PaiementCreationTable-trash:hover,
+.PaiementCreationTable-new-row:hover {
+	cursor: pointer;
+	background-color: #e0e0e0;
+}
+
+.PaiementCreationTable-add-row {
+	text-align: center;
+}
+
+.PaiementCreationTable-trash {
+	color: #ff0000;
+}
+
+input[type="text"] {
+	padding-left: 0.5rem;
+	margin-left: -0.5rem;
+	width: 100%;
+	line-height: 1.8rem;
+	font-size: 1rem;
+	font-family: inherit;
+	border-radius: 5px;
+	border: 1px solid #bdbdbd;
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.75);
+}
+
+/*****************************************
+  upload button styles
+******************************************/
+td .upload-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+input::-webkit-file-upload-button {
+	/* position: absolute; */
+	padding: 10px 20px;
+	background-color: peru;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	text-transform: uppercase;
+	box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2),
+	  0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
+	transition: 100ms ease-out;
+	cursor: pointer;
+  }
+  
+  input::-webkit-file-upload-button:hover {
+	background-color: #bd6e1f;
+	box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+	  0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  }
+
+/* customise model */
+.customModelPadding-paiement-creation{
+	padding: 40px 0px !important;
+	width: 120%!important;
+}
+
+
+.titre_piem
+{
+	text-align: left;
+    font-size: large;
+    padding-left: 26px;
+    border-bottom: 1px solid #c1c3d1;
+}
+
+.devis_id
+{
+	background: green;
+    color: white;
+    padding: 4px;
+    border-radius: 6px;
+}
